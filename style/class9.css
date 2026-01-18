@@ -5,3 +5,139 @@
   font-weight: weight;
   font-style: normal;
 }
+/* shared style */
+.display-flex{
+display: flex;
+}
+.text-primary{
+    color: #FF900E;
+}
+
+ .text-grey{
+color: #424242;
+} 
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 500px;
+}
+
+/* header style */
+
+
+
+/* navbar related style */
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;  
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center; 
+    /* lakha gola jodi opre othe jai ta hole ata er alingment thik korar jonno use hoy ei tag ta rki */
+}
+
+.brand{
+     font-weight: 700; 
+     font-size: 3rem; 
+}
+
+.nav-link{
+    text-decoration: none;
+}
+.navbar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner related style */
+.banner-content{
+max-width: 850px;
+ margin: 0 auto; 
+text-align: center;
+margin-bottom: 50px;
+}
+.banner-title{
+font-weight: 700px;
+ font-size: 4rem; 
+ /* 64px re vag kore 4rem dise  */
+
+}
+.banner-describtion{
+font-weight:400px;
+font-size: 16px;
+line-height: 26px;
+}
+.btn-primary{
+font-weight:600px; 
+/* font-weight: semi bold re amra 600px dite pario; */
+font-size: 1.25rem;
+border-radius: 8px;
+background-color: rgba(255, 144, 14, 1);
+color: #FFFFFF;
+padding: 20px 25px;
+border: none;
+
+}
+
+
+
+
+.banner-image{
+width: 100%;
+
+}
+ /* team and featuers related style */
+.teams{
+    align-items: center;
+}
+.tem-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+
+}
+.our-features{
+    margin-left:73px;
+  max-width: 537px;
+}
+
+
+#quick-list{
+    font-weight: 500px;
+    /* 500px re medium bola jay arki font size */
+
+}
+
+
+/* responsive media querey */
+@media screen and (max-width:576px){
+.navbar,.nav-link,.teams{
+ flex-direction: column;   
+}
+.team-img-container{
+    grid-template-columns: repeat(1,1fr);
+}
+    .our-features{
+        margin-left: 20px;
+    }
+
+}
+/* medium size device */
+@media screen and ( max-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
+}
